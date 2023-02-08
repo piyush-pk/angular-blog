@@ -1,0 +1,90 @@
+
+<h1 class="text-center text-white">Create New Post</h1>
+
+<div>
+  <div class="col-span-6 my-2">
+
+    <input type="text" id="name" name="name" [(ngModel)]="title"
+      class="mt-1 w-full p-2 rounded-md border-2 border-gray-200 bg-white text-sm text-gray-700 shadow-xl" />
+  </div>
+
+  <ejs-richtexteditor
+    id="defaultRTE"
+    #richTextEditor
+    [toolbarSettings]="tools"
+    [quickToolbarSettings]="quickTools"
+  >
+    <ng-template #valueTemplate>
+
+
+      <p>
+        The Rich Text Editor component is WYSIWYG ("what you see is what you
+        get") editor that provides the best user experience to create and update
+        the content. Users can format their content using standard toolbar
+        commands.
+      </p>
+      <b><h3>Insert images also</h3></b>
+      <h4>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+        aspernatur quisquam exercitationem praesentium eveniet laboriosam error,
+        consectetur impedit unde veritatis minus quia repellat est amet
+        similique explicabo modi consequatur vel provident dicta? Neque,
+        suscipit? Autem incidunt quasi voluptate temporibus! Incidunt minus,
+        libero quam quasi aliquid rerum perferendis suscipit numquam alias illo
+        maxime adipisci sed itaque quod tenetur quis, sunt ea mollitia modi
+        eaque in vitae. Perferendis, alias dignissimos. Incidunt, laborum illo
+        molestiae libero ducimus ullam sit quos quo temporibus eos dolorum
+        tempora nobis, perferendis est, consequatur earum autem optio sequi
+        rerum molestias! Non dolores nisi veniam accusantium pariatur maiores
+        asperiores fugit eaque tenetur corrupti dolore rem expedita adipisci
+        excepturi, quo ea praesentium hic qui sint. Maiores ducimus debitis
+        libero! Distinctio excepturi blanditiis veniam quam, dolor dignissimos
+        totam commodi ea eaque sequi cupiditate exercitationem perferendis unde
+        neque quos, eum minima repellat accusamus itaque, autem suscipit
+        voluptas? Minima quas architecto nobis quo, consectetur nisi commodi
+        totam eligendi molestiae numquam vero quibusdam voluptatibus dicta!
+        Autem, officiis optio? Tempore atque, nulla eaque iusto qui eveniet ea
+        vel nobis, doloremque a provident, dolor non quasi commodi sit
+        cupiditate totam. Quidem aspernatur beatae soluta vero cumque ducimus
+        repellat saepe nisi in quis. Totam praesentium, reprehenderit corrupti
+        harum minima assumenda, rem dolorem et repudiandae maxime mollitia
+        temporibus perferendis quas voluptatem, saepe at. Nostrum, maiores
+        libero eum a ullam animi quaerat laudantium, rem hic magnam nihil
+        voluptate, cumque magni enim dolorum alias provident nobis nisi
+        molestiae! Itaque, fugiat consectetur! Sed iste maiores fugit similique
+        dolores nemo harum assumenda? Esse non laudantium magni vitae voluptates
+        aliquid amet sed voluptas, enim modi sit temporibus, porro sint fuga
+        nobis! Placeat commodi, enim libero consequatur odio asperiores
+        perspiciatis. Rerum voluptatibus cumque libero nostrum! Minima vel
+        inventore assumenda. Unde atque sequi ex, mollitia ducimus commodi, odio
+        eius molestias, tempore molestiae pariatur corrupti beatae nesciunt
+        eveniet enim esse quo obcaecati. Doloremque labore voluptates molestias
+        incidunt est minima vitae praesentium saepe quae nostrum! Molestias
+        eligendi eveniet maxime laborum cumque dolores odio, iste aut commodi
+        dolorem! Error, eveniet, distinctio natus dolore atque optio incidunt
+        autem aliquam excepturi sit est neque, commodi dolor magni esse ipsa
+        asperiores blanditiis ut veniam? Eligendi rerum nemo eaque delectus
+        maxime expedita quibusdam distinctio possimus, iure nobis cupiditate
+        animi eius omnis iste officiis. Aliquam veritatis, voluptatem dolores
+        asperiores quae cumque perspiciatis eveniet molestiae est eum totam
+        earum iusto assumenda? Similique corrupti sequi voluptatum alias culpa.
+        Quasi, corrupti? Deserunt aperiam adipisci suscipit, obcaecati
+        distinctio eos nostrum nulla sit dolor mollitia ad repudiandae modi amet
+        illum! Assumenda, consequatur? Id ex suscipit earum. Doloribus sunt
+        fugit consequatur laborum culpa aliquid tempora perspiciatis aut
+        accusantium, ipsam adipisci eius dicta magni temporibus id dolorem
+        voluptatem necessitatibus vel amet excepturi, quam soluta, repellat
+        blanditiis. Ad sint voluptate autem?
+      </h4>
+    </ng-template>
+  </ejs-richtexteditor>
+
+  <div class="text-center p-2">
+  <button
+    class="block rounded-md w-full my-5 bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
+    (click)="createPost()"
+  >
+  Create Post
+  </button>
+</div>
+</div>
