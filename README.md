@@ -1,6 +1,6 @@
 # Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4. [Demo Link](https://angular-blog-pk.web.app/)
 
 ## Development server
 
