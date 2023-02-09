@@ -19,7 +19,7 @@ export class PostService {
     return this._http.get(this.url + id, {observe: 'response', withCredentials: true});
   }
 
-  createPost(data: any) {
+  createPost(data: FormData) {
     return this._http.post(this.url + 'createPost', data, {observe: 'response', withCredentials: true});
   }
 
